@@ -1,1 +1,43 @@
+#calculate the average breath in a human lifetime
 
+#minutes per year
+m = (365 * 24 * 60)
+
+#breathes per minute
+infant = 45
+year_1_4 = 25
+year_5_14 = 20
+adult = 16
+
+#heartbeats per year
+h = (m * 60 * 67.5)
+
+#breathes for infant
+infant_min = (1 * m * infant_min)
+
+#breathes for year 1-4
+year_1_4 = (3 * m * year_1_4)
+
+#breathes for year 5-14
+year_5_14 = (9 * m *year_5_14)
+
+age = int(input('What is your age? '))
+
+# breathes for adult
+adult = (age - 14) * m
+
+
+if age <= 1:
+    v = (m * infant)
+    print (v)
+if age <= 4:
+    age -= 1
+    x = (m * age * year_1_4)
+    print (x)
+if age <= 15:
+    age -= 4
+    y = (m * age * year_5_14)
+    print (y)
+else :
+    age -= 15
+    z = (m * age * adult)
